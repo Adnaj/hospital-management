@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}
+contact
+{% endblock %}
+
+{% load static %}
+{% block content%}
+
+<div id="mainfront" class="mt-0">
+    <div class="container h-100 d-flex align-items-center">
+      <div class="frontpage d-flex align-items-center justify-content-between">
+        <div class="col-sm-6 contact">
+            <h2 class="headh1 pt-4">Always connect with us</h2>
+            <form action="" class="d-grid gap-2">
+                <input class="text-white inputbg" type="email" placeholder="Email">
+                <input class="text-white inputbg" type="text" placeholder="Subect">
+                <textarea class="text-white inputbg" name="" id="" cols="15" rows="5" placeholder="Message"></textarea>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+
+        </div>
+        <div class="col-sm-6 d-flex justify-content-center">
+          <img src="{% static '/images/bannerimg.jpg' %}" alt="">
+  
+        </div>
+      </div>
+  
+    </div>
+  
+  </div>
+  <div class="container mb-5 con2">
+    <div class="row">
+      <div class="col-sm-4 my-3 d-flex justify-content-center">
+        <button class="btn btn-primary w-75 d-flex align-items-center justify-content-center py-4">
+          <i class="fa-solid fa-clock fa-2x pe-2"></i>
+          <div>
+            <h5 class="mb-0">opening hours</h5>
+            <h6 class="mb-0">We are open 7days</h6>
+          </div>
+        </button>
+  
+      </div>
+      <div class="col-sm-4 my-3 d-flex justify-content-center">
+        <button class="btn btn-dark w-75 d-flex align-items-center justify-content-center py-4">
+          <i class="fa-solid fa-location-dot fa-2x pe-2"></i>
+          <div>
+            <h5 class="mb-0">Visit our location</h5>
+            <h6 class="mb-0">House-1, Road 6, Dhaka 1205</h6>
+          </div>
+        </button>
+  
+      </div>
+      <div class="col-sm-4 my-3 d-flex justify-content-center">
+        <button class="btn btn-primary w-75 d-flex align-items-center justify-content-center py-4">
+          <i class="fa-solid fa-phone fa-2x pe-2"></i>
+          <div>
+            <h5 class="mb-0">Contact us now</h5>
+            <h6 class="mb-0">+09666-710606</h6>
+          </div>
+        </button>
+  
+      </div>
+    </div>
+  </div>
+
+{% endblock%}

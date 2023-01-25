@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
+
+* {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+li:hover{
+    color: rgba(0, 0, 0, 0.897);
+}
+
+#mainfront{
+    width: 100%;
+    height: 90vh;
+    background-image:linear-gradient(to right, transparent 65%, #3a4256e5 65%), url('/static/images/banner0.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.navtext{
+    color: rgba(0, 0, 0, 0.788);
+}
+.headh1{
+    font-size: 40px;
+    color: #3a4256;
+}
+.headp{
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 40px;
+}
+.frontpage{
+    margin-top: -100px;
+}
+.btn-style{
+    padding: 12px 18px;
+}
+.btn-primary{
+    background-image: linear-gradient(75deg,#19d3ae,#0fcfec)!important;
+    border-color: transparent!important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.frontpage img{
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -15px #000;
+    width: 80%;
+}
+.btn-dark{
+    background-color: #3a4256e5 !important;
+    border-color: transparent!important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.con2{
+    margin-top: -100px;
+}
+.service img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.features{
+    background: #f0f8ff;
+    min-height: 100vh;
+}
+.inputbg{
+    background-color: #0c0b1b;
+    border: 10px;
+    padding: 10px;
+}
+/* .requiredField{
+    color: #0c0b1b;
+    border: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.form-group input{
+    width: 300px;
+} */
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:900px) {
+    .headh1{
+        font-size: 30px;
+        color: #3a4256;
+    }
+    .headp{
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .frontpage{
+        margin-top: -30px;
+    }
+    .btn-style{
+        padding: 6px 9px;
+    }
+    .frontpage img{
+        display: none;
+    }
+    #mainfront{
+        background-image: url('/static/images/banner0.png');
+
+    
+    }
+    
+}

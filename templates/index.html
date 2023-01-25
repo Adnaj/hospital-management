@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% block title %}
+home
+{% endblock %}
+
+
+{% block content%}
+{% load static %}
+<div id="mainfront" class="">
+  <div class="container h-100 d-flex align-items-center">
+    <div class="frontpage d-flex align-items-center justify-content-between">
+      <div class="col-sm-5">
+        <h1 class="headh1">Doctor's Chamber on
+          Video Call</h1>
+        <p class="headp">Book video call appointments with the country's most qualified specialist doctors, in their
+          private chambers.</p>
+        <a href="{% url 'booking' %}" class="btn btn-primary btn-style">make an appointment</a>
+      </div>
+      <div class="col-sm-8 d-flex justify-content-center">
+        <img src="{% static '/images/bannerimg.jpg' %}" alt="">
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<div class="container mb-5 con2">
+  <div class="row">
+    <div class="col-sm-4 my-3 d-flex justify-content-center">
+      <button class="btn btn-primary w-75 d-flex align-items-center justify-content-center py-4">
+        <i class="fa-solid fa-clock fa-2x pe-2"></i>
+        <div>
+          <h5 class="mb-0">opening hours</h5>
+          <h6 class="mb-0">We are open 7days</h6>
+        </div>
+      </button>
+
+    </div>
+    <div class="col-sm-4 my-3 d-flex justify-content-center">
+      <button class="btn btn-dark w-75 d-flex align-items-center justify-content-center py-4">
+        <i class="fa-solid fa-location-dot fa-2x pe-2"></i>
+        <div>
+          <h5 class="mb-0">Visit our location</h5>
+          <h6 class="mb-0">House-1, Road 6, Dhaka 1205</h6>
+        </div>
+      </button>
+
+    </div>
+    <div class="col-sm-4 my-3 d-flex justify-content-center">
+      <button class="btn btn-primary w-75 d-flex align-items-center justify-content-center py-4">
+        <i class="fa-solid fa-phone fa-2x pe-2"></i>
+        <div>
+          <h5 class="mb-0">Contact us now</h5>
+          <h6 class="mb-0">+09666-710606</h6>
+        </div>
+      </button>
+
+    </div>
+  </div>
+</div>
+<section>
+  <div class="container">
+    <div>
+      <h4 class="text-center" style="color: #0fcfec;">Our services</h4>
+      <h1 class="head1 text-center pb-5">Service we Provide</h1>
+    </div>
+    <div class="row service pb-5">
+      <div class="col-sm-4 gap-3 d-grid text-center">
+        <img class="w-10" src="{% static '/images/ser1.png' %}" alt="">
+        <h3>Get Medicine Reminder</h3>
+        <p class="headp">Upload and save important medical reports in the wrb app. Your reports are safely stored and
+          they help the doctors to provide you get all kinds of health related services with accurate consultation.</p>
+      </div>
+      <div class="col-sm-4 gap-3 d-grid text-center">
+        <img class="w-10" src="{% static '/images/ser2.png' %}" alt="">
+        <h3>Upload Medical Report</h3>
+        <p class="headp">Who remembers to take medicine on time! That’s why the web app has a medicine reminder feature
+          which auto-sync with e-prescriptions and will remind you to take the medicine at the right time.</p>
+      </div>
+      <div class="col-sm-4 gap-3 d-grid text-center">
+        <img class="w-10" src="{% static '/images/ser3.png' %}" alt="">
+        <h3>Create Health Profile</h3>
+        <p class="headp">Add information about your current or chronic medical conditions, family medical history in the
+          profile section of the web App. Allow Doctors to ensure fast and accurate medical care for you.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="py-5">
+      <h3 class="text-center font-weight-light pb-5">Time and distance are no longer a matter of concern. Easily receive
+        advice on physical illness or health issues through video calling.</h3>
+      <div class="d-flex">
+        <div class="col-sm-6 d-grid gap-3">
+          <div class="d-flex">
+            <h3 class="pe-2 text-primary">1.</h3>
+            <div>
+              <h3>Create Appointments</h3>
+              <p class="">Visit the Online Doctors Portal web app and create your account in less than a minute, and
+                make appointments easily form our specialist doctors.</p>
+
+            </div>
+          </div>
+          <div class="d-flex">
+            <h3 class="pe-2 text-primary">2.</h3>
+            <div>
+              <h3>Get Medical Consultation</h3>
+              <p class="">You can make an instant appointment and get the advice of a doctor in a video call, or you can
+                make an appointment with a specialist doctor of your choice for the next time.
+
+              </p>
+
+            </div>
+          </div>
+          <div class="d-flex">
+            <h3 class="pe-2 text-primary">3.</h3>
+            <div>
+              <h3>Get E-Prescription</h3>
+              <p class="">As soon as the video call ends, you will get the e-prescription given by the doctor in your
+                app. You will also be given a reminder to take the medicine on time.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img class="w-100" src="{% static '/images/gif3.png' %}" alt="">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="doctorsid">
+  <div class="container">
+    <h4 class="text-center pt-5" style="color:  #0fcfec;">Our doctors</h4>
+    <div class="row py-5">
+      <div class="col-sm-6">
+        <h1 class="headh1">Our Specialized Doctors ?</h1>
+        <p class="headp">Join Our Online Doctors Portal Team and Create your Virtual Chamber. Provide Medical Consultancy via video call
+          and expand the reach of your service. We have a strong network of Bangladeshi registered doctors that you can
+          trust</p>.
+          <a href="{% url 'doctors' %}" class="btn btn-primary btn-style">know more</a>
+
+      </div>
+      <div class="col-sm-6">
+        <img class="w-100" src="{% static '/images/docl.png' %}" alt="">
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+{% endblock%}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+doctors
+{% endblock %}
+
+
+{% block content%}
+
+<h4 class="text-center py-5" style="color: #0fcfec;">Our doctors</h4>
+<div class="container">
+    <div class="row">
+        {% for d in doc %}
+        <div class="card text-center mx-auto pt-2 my-2 mx-3" style="width: 18rem;background-color: #3a4256;">
+            <img class="card-img-top" src="{{d.doc_image.url}}" alt="Card image cap">
+            <div class="card-body text-white">
+                <h5 class="card-title">{{d.doc_name}}</h5>
+                <p class="card-text">{{d.doc_spec}}</p>
+                <p class="card-text">{{d.dep_names}}</p>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock%}
